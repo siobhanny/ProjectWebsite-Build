@@ -10,13 +10,13 @@ html {
 
 body {
     font-family: sans-serif;
-    background: url('/assets/pexels-alexwolfmx-13710182.jpg');
+    background: url('../assets/pexels-ekamelev-1685543.jpg');
     color: #fff;
     text-align: center;
 }
 
 header {
-    background-color: #ed5d45;
+    background-color: #E97451;
     color: #fff;
     display: flex;
     align-items: center;
@@ -30,17 +30,17 @@ header {
 }
 
 header.hero-banner {
-    position: relative; 
+    position: relative;
     display: flex;
-    flex-direction: column;    
-    justify-content: flex-start;   
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 90px;
-    background: url('assets/background.png');
+    background: url('../assets/background.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
 
 }
 
@@ -60,7 +60,7 @@ button {
 
 button:focus {
     color: #00000b;
-    border: 1px solid #ed5d45;
+    border: 1px solid #E97451;
 }
 
 nav {
@@ -117,8 +117,8 @@ nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
-    background-color: #ed5d45;
+    max-width: 130px;
+    background-color: #E97451;
     color: rgb(231, 236, 246);
     text-align: center;
     padding: 8px 16px;
@@ -139,33 +139,96 @@ nav li a {
     margin: 20px;
 }
 
-footer {
-    background-color: #ed5d45;
-    padding: 20px 20px;
+.merch-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
 }
 
+.merch-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.merch-card {
+    background-color: rgba(0, 0, 8, 0.939);
+    color: #FFF;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 20px;
+    flex: 0 1 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.merch-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    background-color: #E97451;
+    color: rgb(231, 236, 246);
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.merch-button:hover {
+    border: 1px solid rgb(23, 49, 96);
+    color: floralwhite;
+    background-color: rgb(23, 49, 96);
+}
+
+footer {
+    background-color: #E97451;
+    padding: 20px 20px;
+}
 
 @media screen and (max-width:570px) {
     button {
         display: block;
     }
 
-    nav {
+    #menu {
         display: none;
         position: absolute;
         top: 100%;
-        left: 65%;
-        z-index: 100;
+        right: 1rem;
+        left: auto;
+        z-index: 1000;
+        min-width: 100px;
         background-color: #333;
+
     }
 
-    nav ul {
+    #menu ul {
+        display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 0;
+        margin: 0;
+        padding: 6px 0;
     }
 
-    nav.active {
+    #menu.active {
         display: block;
+        text-align: center;
+        padding: 5px 5px;
+        text-decoration: none;
+    }
+
+    #menu li {
+        margin: 0;
     }
 
 }
