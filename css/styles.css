@@ -238,4 +238,8 @@ footer {
         margin: 0;
     }
 
+    .albumcover {
+        width: 70%;
+        max-width: 350px;
+    }
 }
