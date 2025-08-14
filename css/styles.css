@@ -83,6 +83,12 @@ nav li a {
     text-decoration: none;
 }
 
+.albumcover {
+    display: block;
+    width: min(100%, 560px);
+    height: auto;
+    margin: 0 auto;
+}
 
 #card-section {
     display: flex;
